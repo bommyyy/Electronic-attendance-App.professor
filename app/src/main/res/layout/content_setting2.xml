@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Setting2Activity"
+    tools:showIn="@layout/activity_setting2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/group1_txt"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="10dp"
+            android:text="1. 쉬는 시간(출튀에 대한 시간 설정)"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/group1"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/r1_10"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="10분" />
+
+            <RadioButton
+                android:id="@+id/r1_15"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="15분" />
+
+            <RadioButton
+                android:id="@+id/r1_20"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="20분" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/group2_txt"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="10dp"
+            android:text="2. 지각(△의 기준 설정)"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/r2_5"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="5분" />
+
+            <RadioButton
+                android:id="@+id/r2_10"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="10분" />
+
+            <RadioButton
+                android:id="@+id/r2_15"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="15분" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/group3_txt"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="10dp"
+            android:text="3. 결석(x의 기준 설정_수업마치기 N분 전)"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/r3_90"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="1시간 30분" />
+
+            <RadioButton
+                android:id="@+id/r3_60"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="1시간" />
+
+            <RadioButton
+                android:id="@+id/r3_30"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="30분" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/group4_txt"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="10dp"
+            android:text="4. 교수님 전달사항"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/group4_edit"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:background="@drawable/makeline"
+            android:ems="5"
+            android:gravity="start|top"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:paddingStart="2dp"
+            android:paddingTop="7dp"
+            android:text="내용을 입력하세요."
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#5D5D5D"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:textFontWeight="10" />
+
+        <Button
+            android:id="@+id/btn_save2"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#152268"
+            android:text="저장"
+            android:textColor="#FFFFFF"
+            />
+//by seulgi
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
