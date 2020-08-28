@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_setting2">Setting2Activity</string>
+    <string name="title_activity_sub1">Sub1Activity</string>
+    <string name="title_activity_today">TodayActivity</string>
+    <string name="title_activity_mid_check">MidCheckActivity</string>
 </resources>
