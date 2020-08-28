@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Sub1Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#152268"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/txt_name"
+            android:layout_width="303dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_layout"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/btn_find"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/btn_corner"
+            android:text="입 력"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="0, 1, 2" >
+
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="50dp"
+                android:layout_height="130dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_layout"
+                android:gravity="center"
+                android:text="1주차       \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="50dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="2주차       \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp"/>
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="50dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="3주차       \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="4주차       \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp"/>
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="5주차       \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp"/>
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="6주차       \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp"/>
+
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="7주차       \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp"/>
+
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="8주차       \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp"/>
+
+            <Button
+                android:id="@+id/btn_9"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="9주차       \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp"/>
+
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_10"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="10주차      \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_11"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="11주차      \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_12"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="12주차      \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp" />
+
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_13"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="13주차      \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_14"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="14주차      \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_15"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:background="@drawable/border_layout"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="15주차      \n  출석 : N회 \n  결석 : N회\n  지각/출튀"
+                android:textSize="16dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <!--    <include layout="@layout/content_main" />-->
+
+</LinearLayout>
+<!--지현 추가 내용-->
