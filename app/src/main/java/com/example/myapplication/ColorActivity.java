@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -9,32 +8,38 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
+import android.view.View;
+import android.widget.ListView;
 
-public class MainActivity extends AppCompatActivity {
+public class ColorActivity extends AppCompatActivity {
+
+    ListView attendtable;
+    String[] programName = {"1주차","2주차","3주차","4주차","5주차","6주차","7주차"};
+    int[] programImages = {R.drawable.img_green, R.drawable.img_yellow,R.drawable.img_red,
+            R.drawable.img_green, R.drawable.img_green, R.drawable.img_green, R.drawable.img_green};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_color);
+
+        attendtable=findViewById(R.id.attendtable);
+        ProgramAdapter programAdapter=new ProgramAdapter(this, programName, programImages);
+        attendtable.setAdapter(programAdapter);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button b = (Button)findViewById(R.id.btn_log);
-        b.setOnClickListener(new View.OnClickListener(){
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                Intent intent = new Intent(
-                        getApplicationContext(),
-                        ColorActivity.class);
-                startActivity(intent);
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
-//        화면전환 인텐드 추가 내용 - 지현
-
     }
 
     @Override
@@ -58,6 +63,4 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-
 }
