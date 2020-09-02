@@ -17,11 +17,12 @@
         <ListView
             android:id="@+id/subtable"
             android:layout_width="wrap_content"
-            android:layout_height="275dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="100dp"
             android:layout_marginRight="50dp"
-            android:background="@drawable/makelinegrey">
+            android:background="@drawable/makelinegrey"
+            android:padding="10dp">
 
         </ListView>
     </LinearLayout>
@@ -29,3 +30,5 @@
 </LinearLayout>
 
 <!--슬기 리스트뷰 사용-->
+
+<!--지현 padding 추가, 높이 스크롤 없애기 위해 wrap_content로 변경-->
