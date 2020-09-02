@@ -23,16 +23,16 @@ public class ProgramAdapter extends ArrayAdapter<String> {
     }
 
     @Override
-    public View getView(final int position, View convertView, ViewGroup parent) {
+        public View getView(final int position, View convertView, ViewGroup parent) {
 
-        View singleItem = convertView;
-        ProgramViewHolder holder = null;
-        if(singleItem ==null){
-            LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            singleItem = layoutInflater.inflate(R.layout.single_item,parent,false);
-            holder = new ProgramViewHolder(singleItem);
-            singleItem.setTag(holder);
-        }
+            View singleItem = convertView;
+            ProgramViewHolder holder = null;
+            if(singleItem ==null){
+                LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                singleItem = layoutInflater.inflate(R.layout.single_item,parent,false);
+                holder = new ProgramViewHolder(singleItem);
+                singleItem.setTag(holder);
+            }
         else{
             holder= (ProgramViewHolder) singleItem.getTag();
         }
