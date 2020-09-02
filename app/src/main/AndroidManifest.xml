@@ -34,6 +34,18 @@
             android:label="My Application"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".LookupActivity"
+            android:label="My Application"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OnAirActivity"
+            android:label="My Application"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OnAir2Activity"
+            android:label="My Application"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
