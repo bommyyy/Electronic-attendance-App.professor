@@ -33,6 +33,17 @@ public class OnAirActivity extends AppCompatActivity {
         studenttable2.setAdapter(OnAirAdapter);
         //추가
 
+        Button b = (Button)findViewById(R.id.btn_change);
+        b.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        OnAir2Activity.class);
+                startActivity(intent);
+            }
+        });//by 지현
+
 //        Button b = (Button)findViewById(R.id.btn_change);
 //        b.setOnClickListener(new View.OnClickListener(){
 //            @Override

@@ -1,11 +1,13 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -29,6 +31,50 @@ public class TodayActivity extends AppCompatActivity {
         timetable = (ListView) findViewById(R.id.timetable);
         adapter = new myAdapter();
         timetable.setAdapter(adapter);
+
+        Button b = (Button)findViewById(R.id.btn_sub);
+        b.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        SemesterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button c = (Button)findViewById(R.id.btn_onair);
+        c.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        OnAirActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button d = (Button)findViewById(R.id.btn_set);
+        d.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        SettingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button e = (Button)findViewById(R.id.btn_attend);
+        e.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        MidCheckActivity.class);
+                startActivity(intent);
+            }
+        });
     }
     class myAdapter extends BaseAdapter{
 

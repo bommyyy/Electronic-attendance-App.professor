@@ -59,6 +59,9 @@
             android:name=".TodayActivity"
             android:label="my Application"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".SettingActivity"
+            android:label="my Application"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

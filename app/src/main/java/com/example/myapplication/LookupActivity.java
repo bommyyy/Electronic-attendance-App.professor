@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -21,6 +22,7 @@ public class LookupActivity extends AppCompatActivity {
     int[] butX ={R.drawable.x,R.drawable.x,R.drawable.x};
     //추가
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,16 @@ public class LookupActivity extends AppCompatActivity {
         LookupAdapter LookupAdapter=new LookupAdapter(this, stuNo,stuName,butO,butA,butX);
         studenttable.setAdapter(LookupAdapter);
         //추가
+
+        studenttable.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View v, int position, long id) {
+                Intent intent = new Intent(getApplicationContext(),ColorActivity.class);
+                startActivity(intent);
+            }
+        });
+//        by지현 student click event 추가
+
 
 //        Button b = (Button)findViewById(R.id.btn_change);
 //        b.setOnClickListener(new View.OnClickListener(){

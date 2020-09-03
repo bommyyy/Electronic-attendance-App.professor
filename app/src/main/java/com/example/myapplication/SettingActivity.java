@@ -19,12 +19,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class SemesterActivity extends AppCompatActivity {
+public class SettingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_semester);
+        setContentView(R.layout.activity_setting);
 
         ListView listview = findViewById(R.id.subtable);
 
@@ -40,7 +40,7 @@ public class SemesterActivity extends AppCompatActivity {
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View v, int position, long id) {
-                Intent intent = new Intent(getApplicationContext(),Sub1Activity.class);
+                Intent intent = new Intent(getApplicationContext(),Setting2Activity.class);
                 startActivity(intent);
             }
         });

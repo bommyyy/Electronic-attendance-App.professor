@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent intent = new Intent(
                         getApplicationContext(),
-                        LookupActivity.class);
+                        TodayActivity.class);
                 startActivity(intent);
             }
         });
