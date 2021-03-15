@@ -59,7 +59,7 @@ public class OnAirActivity extends AppCompatActivity {
         //추가
         list = (ListView) findViewById(R.id.studenttable2);
         personList = new ArrayList<HashMap<String, String>>();
-        getData("http://192.168.219.184/profonair.php"); //ip주소변경
+        getData("http://192.168.200.179/profonair.php"); //ip주소변경
 
         Button b = (Button)findViewById(R.id.btn_change);
         b.setOnClickListener(new View.OnClickListener(){
