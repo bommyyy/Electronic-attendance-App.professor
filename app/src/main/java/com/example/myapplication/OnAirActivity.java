@@ -38,13 +38,13 @@ public class OnAirActivity extends AppCompatActivity {
     ListView list;
     ////jihyeon
 
-//    ListView studenttable2;
-//    String[] stuNo ={"1","2","3"};
-//    String[] stuName = {"김슈니","이슈니","박슈니"};
-//    int[] butO ={R.drawable.o,R.drawable.o,R.drawable.o};
-//    int[] butA ={R.drawable.a,R.drawable.a,R.drawable.a};
-//    int[] butX ={R.drawable.x,R.drawable.x,R.drawable.x};
-//    //추가
+    ListView studenttable2;
+    String[] stuNo ={"1","2","3"};
+    String[] stuName = {"김슈니","이슈니","박슈니"};
+    int[] butO ={R.drawable.o,R.drawable.o,R.drawable.o};
+    int[] butA ={R.drawable.a,R.drawable.a,R.drawable.a};
+    int[] butX ={R.drawable.x,R.drawable.x,R.drawable.x};
+    //추가
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +59,7 @@ public class OnAirActivity extends AppCompatActivity {
         //추가
         list = (ListView) findViewById(R.id.studenttable2);
         personList = new ArrayList<HashMap<String, String>>();
-        getData("http://172.30.81.53/profonair.php"); //ip주소변경
+        getData("http://192.168.200.179/profonair.php"); //ip주소변경
 
         Button b = (Button)findViewById(R.id.btn_change);
         b.setOnClickListener(new View.OnClickListener(){
