@@ -33,4 +33,5 @@ public class MidCheckActivity extends AppCompatActivity {
         });//by지현
     }
 
+
 }

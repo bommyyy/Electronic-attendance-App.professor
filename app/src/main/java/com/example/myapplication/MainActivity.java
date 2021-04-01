@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().permitNetwork().build());
             httpclient = new DefaultHttpClient();
-            httppost = new HttpPost("http://192.168.219.184/proflogin.php"); //ip주소변경
+            httppost = new HttpPost("http://172.30.81.53/proflogin.php"); //ip주소변경
             nameValuePairs = new ArrayList<NameValuePair>(2);
             String id = msg_id.getText().toString();
             nameValuePairs.add(new BasicNameValuePair("username", msg_id.getText().toString()));
