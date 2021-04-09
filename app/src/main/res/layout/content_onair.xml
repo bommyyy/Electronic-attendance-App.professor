@@ -31,7 +31,7 @@
     <ListView
         android:id="@+id/studenttable2"
         android:layout_width="357dp"
-        android:layout_height="233dp"
+        android:layout_height="450dp"
         android:layout_marginTop="24dp"
         android:headerDividersEnabled="false"
         app:layout_constraintTop_toBottomOf="@+id/search_name2"
@@ -44,7 +44,7 @@
         android:id="@+id/btn_change"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="30dp"
         android:text="수정"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/studenttable2"

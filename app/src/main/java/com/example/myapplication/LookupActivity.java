@@ -55,7 +55,7 @@ public class LookupActivity extends AppCompatActivity {
 
         list = (ListView) findViewById(R.id.studenttable);
         personList = new ArrayList<HashMap<String, String>>();
-        getData("http://172.30.81.53/profonair.php"); //ip주소변경
+        getData("http://192.168.219.199/profonair.php"); //ip주소변경
     }
 
         @Override

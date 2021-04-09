@@ -82,7 +82,7 @@ public class MidCheckActivity extends AppCompatActivity {
         try {
            // String token = FirebaseInstanceId.getInstance().getToken(); //(?)
             httpclient = new DefaultHttpClient();
-            httppost = new HttpPost("http://192.168.200.179/push_notification2.php"); //ip주소변경
+            httppost = new HttpPost("http://192.168.219.199/push_notification2.php"); //ip주소변경
             //nameValuePairs = new ArrayList<NameValuePair>(1);
             //nameValuePairs.add(new BasicNameValuePair("Token", token));
             //httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));

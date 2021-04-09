@@ -55,7 +55,7 @@ public class ColorActivity extends AppCompatActivity {
 
         list = (ListView) findViewById(R.id.attendtable);
         personList = new ArrayList<HashMap<String, String>>();
-        getData("http://172.30.81.53/profcolor.php"); //ip주소변경
+        getData("http://192.168.219.199/profcolor.php"); //ip주소변경
     }
 
     @Override
