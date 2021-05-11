@@ -30,5 +30,4 @@
 
     <include layout="@layout/content_main" />
 
-// by seulgi
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

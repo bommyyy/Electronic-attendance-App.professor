@@ -27,5 +27,3 @@ public class TodayView extends LinearLayout {
         textView2.setText(name);
     }
 }
-
-//지현 todayactivity inflater

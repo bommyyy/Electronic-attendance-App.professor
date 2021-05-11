@@ -23,5 +23,4 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_setting2" />
-//by seulgi
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -26,7 +26,3 @@
         android:textAlignment="center"
         android:textSize="20dp" />
 </LinearLayout>
-
-<!--슬기/semester액티비티에 사용-->
-
-<!--지현 글씨 gravity 전체적으로 변경-->

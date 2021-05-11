@@ -7,7 +7,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -36,14 +35,6 @@ public class LookupActivity extends AppCompatActivity {
     JSONArray peoples = null;
     ArrayList<HashMap<String, String>> personList;
     ListView list;
-    ////jihyeon
-//    ListView studenttable;
-//    String[] stuNo ={"1","2","3"};
-//    String[] stuName = {"김슈니","이슈니","박슈니"};
-//    int[] butO ={R.drawable.o,R.drawable.o,R.drawable.o};
-//    int[] butA ={R.drawable.a,R.drawable.a,R.drawable.a};
-//    int[] butX ={R.drawable.x,R.drawable.x,R.drawable.x};
-//    //추가
 
 
     @Override

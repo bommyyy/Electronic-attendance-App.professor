@@ -21,6 +21,5 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_mid_check" />
-    //by seulgi
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

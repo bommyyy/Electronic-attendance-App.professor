@@ -5,13 +5,11 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -55,13 +53,10 @@ public class Sub1Activity extends AppCompatActivity {
             for (int i = 0; i < peoples.length(); i++) {
                 JSONObject c = peoples.getJSONObject(i);
                 String SUBno = c.getString(TAG_NO);
-                //String SUBname = c.getString(TAG_NAME);
 
                 HashMap<String, String> persons = new HashMap<String, String>();
 
                 persons.put(TAG_NO, SUBno);
-                //persons.put(TAG_NAME, SUBname);
-
 
                 personList.add(persons);
             }
@@ -129,4 +124,3 @@ public class Sub1Activity extends AppCompatActivity {
     }
 
 }
-//by지현 1주차,2주차,3주차 버튼 intent추가

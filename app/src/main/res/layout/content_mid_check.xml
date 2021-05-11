@@ -59,5 +59,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_subname2" />
 
-    //by seulgi
 </androidx.constraintlayout.widget.ConstraintLayout>

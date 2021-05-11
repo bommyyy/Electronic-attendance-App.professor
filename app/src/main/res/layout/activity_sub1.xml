@@ -69,5 +69,3 @@
             android:padding="10dp"></ListView>
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
-    <!--스크롤뷰 추가함-->
-    <!--지현 추가 내용-->
