@@ -44,7 +44,7 @@ public class Sub1Activity extends AppCompatActivity {
 
         list = (ListView) findViewById(R.id.listlist);
         personList = new ArrayList<HashMap<String, String>>();
-        getData("http://192.168.219.199/prosub1.php"); //ip주소변경
+        getData("http://192.168.200.146/prosub1.php"); //ip주소변경
     }
 
     protected void showList() {
