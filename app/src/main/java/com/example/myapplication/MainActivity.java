@@ -3,13 +3,8 @@ package com.example.myapplication;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.os.StrictMode;
 import android.view.View;
 import android.view.Menu;
@@ -19,7 +14,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
-
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -71,13 +65,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }).start();
 
-//                Intent intent = new Intent(
-//                        getApplicationContext(),
-//                        TodayActivity.class);
-//                startActivity(intent);
+
             }
         });
-//        화면전환 인텐드 추가 내용 - 지현
+
 
     }
 
@@ -107,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().permitNetwork().build());
             httpclient = new DefaultHttpClient();
-            httppost = new HttpPost("http://192.168.219.199/proflogin.php"); //ip주소변경
+            httppost = new HttpPost("http://192.168.200.146/proflogin.php"); //ip주소변경
             nameValuePairs = new ArrayList<NameValuePair>(2);
             String id = msg_id.getText().toString();
             nameValuePairs.add(new BasicNameValuePair("username", msg_id.getText().toString()));

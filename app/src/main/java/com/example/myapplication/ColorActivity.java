@@ -1,13 +1,10 @@
 package com.example.myapplication;
 
-import android.content.Intent;
+
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -36,14 +33,6 @@ public class ColorActivity extends AppCompatActivity {
     JSONArray peoples = null;
     ArrayList<HashMap<String, String>> personList;
     ListView list;
-    ////jihyeon
-//    ListView studenttable;
-//    String[] stuNo ={"1","2","3"};
-//    String[] stuName = {"김슈니","이슈니","박슈니"};
-//    int[] butO ={R.drawable.o,R.drawable.o,R.drawable.o};
-//    int[] butA ={R.drawable.a,R.drawable.a,R.drawable.a};
-//    int[] butX ={R.drawable.x,R.drawable.x,R.drawable.x};
-//    //추가
 
 
     @Override
@@ -55,7 +44,7 @@ public class ColorActivity extends AppCompatActivity {
 
         list = (ListView) findViewById(R.id.attendtable);
         personList = new ArrayList<HashMap<String, String>>();
-        getData("http://192.168.219.199/profcolor.php"); //ip주소변경
+        getData("http://192.168.200.146/profcolor.php"); //ip주소변경
     }
 
     @Override
@@ -67,13 +56,9 @@ public class ColorActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected (MenuItem item){
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+              int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+             if (id == R.id.action_settings) {
             return true;
         }
 
@@ -106,13 +91,6 @@ public class ColorActivity extends AppCompatActivity {
             );
 
             list.setAdapter(adapter);
-//            list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//                @Override
-//                public void onItemClick(AdapterView parent, View v, int position, long id) {
-//                    Intent intent = new Intent(getApplicationContext(), Activity.class);
-//                    startActivity(intent);
-//                }
-//            });
 
         } catch (JSONException e) {
             e.printStackTrace();

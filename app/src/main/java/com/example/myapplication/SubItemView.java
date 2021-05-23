@@ -40,5 +40,4 @@ public class SubItemView extends LinearLayout {
     }
 }
 
-
 //Semeseter액티비티에 들어가는 데이터 클래스

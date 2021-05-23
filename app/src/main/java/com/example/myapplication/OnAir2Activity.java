@@ -12,9 +12,6 @@ import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 public class OnAir2Activity extends AppCompatActivity {
 
     ListView studenttable3;
@@ -33,7 +30,7 @@ public class OnAir2Activity extends AppCompatActivity {
         studenttable3=findViewById(R.id.studenttable3);
         OnAir2Adapter OnAir2Adapter=new OnAir2Adapter(this, stuNo,stuName,butO,butA,butX);
         studenttable3.setAdapter(OnAir2Adapter);
-//추가
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -46,16 +43,8 @@ public class OnAir2Activity extends AppCompatActivity {
                         OnAirActivity.class);
                 startActivity(intent);
             }
-        });//by 지현
+        });
 
-//        FloatingActionButton fab = findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
     }
 
     @Override

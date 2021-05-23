@@ -27,7 +27,3 @@ public class Sub_item {
         this.name =name;
     }
 }
-
-
-
-////Semeseter액티비티에 들어가는 데이터 클래스

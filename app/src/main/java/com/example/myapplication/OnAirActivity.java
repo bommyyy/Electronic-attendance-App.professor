@@ -36,7 +36,7 @@ public class OnAirActivity extends AppCompatActivity {
     JSONArray peoples = null;
     ArrayList<HashMap<String, String>> personList;
     ListView list;
-    ////jihyeon
+
 
     ListView studenttable2;
     String[] stuNo ={"1","2","3"};
@@ -44,7 +44,7 @@ public class OnAirActivity extends AppCompatActivity {
     int[] butO ={R.drawable.o,R.drawable.o,R.drawable.o};
     int[] butA ={R.drawable.a,R.drawable.a,R.drawable.a};
     int[] butX ={R.drawable.x,R.drawable.x,R.drawable.x};
-    //추가
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,13 +53,10 @@ public class OnAirActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-//        studenttable2=findViewById(R.id.studenttable2);
-//        OnAirAdapter OnAirAdapter=new OnAirAdapter(this, stuNo,stuName,butO,butA,butX);
-//        studenttable2.setAdapter(OnAirAdapter);
-        //추가
+
         list = (ListView) findViewById(R.id.studenttable2);
         personList = new ArrayList<HashMap<String, String>>();
-        getData("http://192.168.219.199/profonair.php"); //ip주소변경
+        getData("http://192.168.200.146/profonair.php"); //ip주소변경
 
         Button b = (Button)findViewById(R.id.btn_change);
         b.setOnClickListener(new View.OnClickListener(){
@@ -70,26 +67,9 @@ public class OnAirActivity extends AppCompatActivity {
                         OnAir2Activity.class);
                 startActivity(intent);
             }
-        });//by 지현
+        });
 
-//        Button b = (Button)findViewById(R.id.btn_change);
-//        b.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view){
-//                Intent intent = new Intent(
-//                        getApplicationContext(),
-//                        MainActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//        Button fab = findViewById(R.id.btn_save);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+
     }
 
     @Override
@@ -179,7 +159,6 @@ public class OnAirActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     return null;
                 }
-
 
             }
 
